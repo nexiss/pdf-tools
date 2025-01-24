@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "outDir": "/.dist",
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "es2021"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "useUnknownInCatchVariables": true,
+    "allowJs": true,
+    "target": "ES2021",
+    "types": ["node", "lodash-es"],
+    "resolveJsonModule": true,
+  },
+  "exclude": [
+    "dist",
+    "**/dist",
+    "node_modules"
+  ]
+}

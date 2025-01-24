@@ -1,0 +1,50 @@
+{
+  "name": "pdf-tools",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "release": "npx changeset tag",
+    "lint": "npm-groovy-lint --ignorepattern 'node_modules//*' & eslint . --ext js,mjs"
+  },
+  "exports": {
+    ".": "./exports/eslint.json",
+    "./prettier": "./exports/prettier.json"
+  },
+  "dependencies": {
+    "@types/lodash-es": "^4.17.12",
+    "@types/node": "^20.12.12",
+    "@typescript-eslint/eslint-plugin": "^8.21.0",
+    "@typescript-eslint/parser": "^8.21.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-deprecation": "^3.0.0",
+    "eslint-plugin-formatjs": "^4.13.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-no-unsanitized": "^4.1.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-sonarjs": "^3.0.1",
+    "eslint-plugin-testing-library": "^7.1.1",
+    "eslint-plugin-unused-imports": "4.1.4",
+    "eslint-plugin-xss": "^0.1.12",
+    "prettier": "^3.4.2",
+    "semver": "^7.6.3",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "eslint": "^8.57.1",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.12",
+    "npm-groovy-lint": "^15.0.2",
+    "ts-prune": "^0.10.3"
+  },
+  "eslintConfig": {
+    "extends": "./exports/eslint.json"
+  },
+  "prettier": "./exports/prettier.json"
+}
